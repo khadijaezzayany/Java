@@ -18,12 +18,19 @@ public class Prob {
 			int café =  rest2 % 10;
 			int billets =  rest2 % 8;
 			int carte =  rest2 % 10;
+			int nbcafé = rest2 / 10;
+			int nbcarte= rest2 / 10;
+			int nbbillets = rest2 / 8;
+			
 			
 			int rose = café + billets + carte + rest3;
 
 		  
 		System.out.println("Livre et Fourniture" + livre +" MAD .");
 		System.out.println("Il vous restera " + rest +" MAD .");
+		System.out.println("Vous pouvez ensuite acheter : \r" + nbcafé +" Cafés \r" + nbcarte+ " Carte de recharge prépayer \r"+
+		nbbillets+" billets de TRAME");
+		
 		
 		System.out.println("Il vous restera " + rose+"  MAD pour les roses blanches.");
 		
