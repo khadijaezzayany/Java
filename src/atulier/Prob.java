@@ -14,11 +14,12 @@ public class Prob {
 		 int livre = mont * 3 /4;
 			int rest = livre / 3;
 			int rest2 = rest / 3;
+			int rest3= rest % 66;
 			int café =  rest2 % 10;
 			int billets =  rest2 % 8;
 			int carte =  rest2 % 10;
 			
-			int rose = café + billets + carte;
+			int rose = café + billets + carte + rest3;
 
 		  
 		System.out.println("Livre et Fourniture" + livre +" MAD .");
