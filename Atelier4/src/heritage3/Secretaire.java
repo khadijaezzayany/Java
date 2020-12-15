@@ -14,8 +14,13 @@ public class Secretaire extends Personne {
 		return numeroBureau;
 	}
 
-	public String toString() {
+	/*public String toString() {
 		return (super.toString()+", numeroBureau=" + this.numeroBureau );
+	}*/
+		@Override
+	public String toString() {
+		return "Secretaire [getNumeroBureau()=" + getNumeroBureau()
+				+ ", toString()=" + super.toString() + "]";
 	}
 
 	public void ecrirePersonne() {
