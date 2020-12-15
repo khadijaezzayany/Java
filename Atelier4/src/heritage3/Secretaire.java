@@ -19,8 +19,8 @@ public class Secretaire extends Personne {
 	}*/
 		@Override
 	public String toString() {
-		return "Secretaire [getNumeroBureau()=" + getNumeroBureau()
-				+ ", toString()=" + super.toString() + "]";
+		return "Secretaire [NumeroBureau= " + getNumeroBureau()
+				 + super.toString() + "]";
 	}
 
 	public void ecrirePersonne() {
