@@ -17,9 +17,14 @@ public class Etudiant extends Personne {
 		System.out.println(toString());
 	}
 
-	public String toString() {
+	/*public String toString() {
 		// TODO Auto-generated method stub
 		return (super.toString() + ", diplome=" + this.diplome);
+	}*/
+		@Override
+	public String toString() {
+		return "Etudiant [diplome=" + diplome 
+				+ super.toString() + "]";
 	}
 
 }
