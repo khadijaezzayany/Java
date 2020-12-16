@@ -9,8 +9,12 @@ public class Enseignant extends Personne {
 		this.specialite = spcialite;
 	}
 
-	public String toString() {
+	/*public String toString() {
 		return (super.toString() + ", spcialite=" + this.specialite);
+	}*/
+		@Override
+	public String toString() {
+		return "Enseignant [specialite=" + specialite  + super.toString() + "]";
 	}
 
 	public String getSpecialite() {
