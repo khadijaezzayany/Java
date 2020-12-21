@@ -26,23 +26,21 @@ public class Compte {
 		this.solde = solde;
 	}
 
-	// Method Retirer
+	// Method Retrier
 	public void Retirer(double solde) {
 		if (this.solde >= solde) {
 			this.solde -= solde;
 		} else {
 			System.out.println("Pas assez d'argent pour retirer");
 		}
-		System.out.println("Apre le retirage " + "votre solde est "
-				+ getSolde());
+		System.out.println("Apre le retirage votre solde est " + getSolde());
 	}
 
 	// Method Afficher
 	public void Afficher() {
 		// this.numero=numero;
 		// this.solde=solde;
-		System.out.println("Le numéro de votre comte est " + getNumero()
-				+ " et votre solde est : " + getSolde());
+		System.out.println("Le numéro de votre compte est " + getNumero() + " et votre solde est : " + getSolde());
 	}
 
 	// Method Ajouter

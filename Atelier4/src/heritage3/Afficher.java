@@ -4,9 +4,7 @@ public class Afficher {
 
 	public static void main(String[] args) {
 
-		Personne first = new Personne("K"
-				+ "hadija", "Ezzayany", "Hay farah", "Agadir",
-				1997);
+		Secretaire first = new Secretaire("khadija", "Ezzayany", "Hay farah", "Agadir", 1997,"8927387");
 		System.out.println(first.toString());
 		first.modifiePersonne("Hay salam","Safi");
 		System.out.println(first.toString());

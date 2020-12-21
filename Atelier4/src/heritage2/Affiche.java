@@ -12,7 +12,7 @@ public class Affiche {
 
 		System.out.println("\r");
 		CompteEpargne second = new CompteEpargne(200, 18238812);
-		//CompteCourant second = new CompteCourant(199, 122267362713L);
+		// CompteCourant second = new CompteCourant(199, 122267362713L);
 		second.Afficher();
 		second.CalculeInterert(10.3);
 		second.Ajouter(22);

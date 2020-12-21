@@ -4,9 +4,9 @@ package com.supermarche;
 //import java.text.SimpleDateFormat;
 //import java.util.ArrayList;
 //import java.time.format.DateTimeFormatter;
-import java.text.SimpleDateFormat;
-//import java.time.LocalDateTime;
 import java.util.Date;
+//import java.text.SimpleDateFormat;
+//import java.time.LocalDateTime;
 
 public class Caisse {
 
@@ -19,19 +19,19 @@ public class Caisse {
 	}
 
 	public void montantTotal() {
-
-		System.out.println("La caisse numero "+this.numero+" a encaisse "+this.total+". MAD aujourd'hui");
+		System.out.println("La caisse numero " + getNumero() + " a encaisse " + total + " MAD aujourd'hui.");
 	}
 
 	public void scanner(Chariot chariot) {
-		System.out.println("------------------------------------------------");
+		System.out.println("=========================================");
 
-		// Display Time
-		SimpleDateFormat timeCuurentDate = new SimpleDateFormat("MM/dd/yyyy  hh:mm:ss");
-		Date time = new Date(numero);
-		System.out.println(timeCuurentDate.format(time));
-		// Display number of caisses
-		System.out.println("Caisse numéro " + numero + "\r");
+		// Affichage date
+
+		Date cuurentDatrFormat = new Date();
+		System.out.println(cuurentDatrFormat);
+		// SimpleDateFormat timeCuurentDate = new SimpleDateFormat("MM/dd/yyyy");
+
+		System.out.println("Caisse numéro " + numero + "\n");
 
 		int nbAchat = chariot.getNbAchats();
 		double montantTotal = 0;
@@ -44,8 +44,8 @@ public class Caisse {
 			total += prix;
 		}
 
-		System.out.println("\r Montant a payer : " + montantTotal + " MAD");
-		System.out.println("------------------------------------------------");
+		System.out.println("\n  Montant a payer : " + montantTotal + " MAD");
+		System.out.println("=========================================");
 	}
 
 	public int getNumero() {

@@ -22,13 +22,12 @@ public class Achat {
 		return quantite;
 	}
 
-	/*public void setQuantite(int quantite) {
-		this.quantite = quantite;
-	}
-*/
+	/*
+	 * public void setQuantite(int quantite) { this.quantite = quantite; }
+	 */
 	public double getPrix() {
-		double pourcentage = 1; //if article with out sold the reduction is 100% -> 100/100=1
-		//if article in sold the reduction is 30% -> 30/100=0.3
+		double pourcentage = 1; // if article with out sold the reduction is 100% -> 100/100=1
+		// if article in sold the reduction is 30% -> 30/100=0.3
 		if (article.isSolde()) {
 			pourcentage = 0.3;
 
@@ -36,6 +35,7 @@ public class Achat {
 		return quantite * article.getPrix() * pourcentage;
 
 	}
+
 	public void affiche() {
 		String nom = article.getNom();
 		double prixUnite = article.getPrix();
@@ -49,5 +49,3 @@ public class Achat {
 	}
 
 }
-
-

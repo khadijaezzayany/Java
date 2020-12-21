@@ -3,10 +3,10 @@ package heritage;
 public class Article {
 
 	private String nom;
-	private int prix ;
+	private int prix;
 
 	public void afficher() {
-		System.out.println("le nom d'article est " +getNom()+" prix d'un article est " + getPrix());
+		System.out.println("le nom d'article est " + getNom() + " prix d'un article est " + getPrix());
 	}
 
 	public String getNom() {
@@ -24,6 +24,5 @@ public class Article {
 	public void setPrix(int prix) {
 		this.prix = prix;
 	}
-	
 
 }

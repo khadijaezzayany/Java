@@ -4,32 +4,17 @@ public class Video extends Ouvrage {
 	private String editeur;
 	private double duree;
 
-	Video(String titre, String cetarioDate, boolean dispo, String editeur,
-			double duréé) {
-		super(titre, cetarioDate, dispo);
-		this.duree = duréé;
+	public Video(String titre, String dateCreation, boolean libre, String editeur, double duree) {
+		super(titre, dateCreation, libre);
 		this.editeur = editeur;
-	}
-
-	public String getEditeur() {
-		return editeur;
-	}
-
-	public void setEditeur(String editeur) {
-		this.editeur = editeur;
-	}
-
-	public double getDuree() {
-		return duree;
-	}
-
-	public void setDuree(double duree) {
 		this.duree = duree;
 	}
 
 	@Override
-	void afficher() {
-		System.out.println("Titre : "+getTitre()+"Date de création : "+getCetarionDate()+"La durée : "+getDuree()+"Editeur : "+getEditeur());
+	public void afficher() {
+		System.out.println("Titre de l'ouvrage : " + getTitre() + "\n" + "Auteur : " + this.editeur + "\n" + "Durée : "
+				+ this.duree + "\n" + "Date de création : " + getDateCreation() + "\n" + "Disponible : " + isDispo()
+				+ "\n");
 	}
 
 }

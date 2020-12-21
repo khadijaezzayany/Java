@@ -3,8 +3,7 @@ package heritage3;
 public class Etudiant extends Personne {
 	private String diplome;
 
-	public Etudiant(String nom, String prenom, String adresse, String ville,
-			int dateNaissance, String diplome) {
+	public Etudiant(String nom, String prenom, String adresse, String ville, int dateNaissance, String diplome) {
 		super(nom, prenom, adresse, ville, dateNaissance);
 		this.diplome = diplome;
 	}
@@ -17,14 +16,9 @@ public class Etudiant extends Personne {
 		System.out.println(toString());
 	}
 
-	/*public String toString() {
-		// TODO Auto-generated method stub
-		return (super.toString() + ", diplome=" + this.diplome);
-	}*/
-		@Override
+	@Override
 	public String toString() {
-		return "Etudiant [diplome=" + diplome 
-				+ super.toString() + "]";
+		return "Etudiant [diplome=" + diplome + super.toString() + "]";
 	}
 
 }

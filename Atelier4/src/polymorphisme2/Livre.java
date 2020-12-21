@@ -1,24 +1,23 @@
 package polymorphisme2;
 
 public class Livre extends Ouvrage {
-	private String auteur;
-
-	Livre(String titre, String cetarioDate, boolean dispo, String auteur) {
-		super(titre, cetarioDate, dispo);
+private String auteur;
+	
+	public Livre(String titre, String dateCreation, boolean libre, String auteur) {
+		super(titre, dateCreation, libre);
 		this.auteur = auteur;
 	}
-
-	public String getAuteur() {
-		return auteur;
-	}
-
-	public void setAuteur(String auteur) {
-		this.auteur = auteur;
-	}
-
+	
+	
 	@Override
-	void afficher() {
-System.out.println("Titre : "+getTitre()+"Date de création : "+getCetarionDate()+"Auteur : "+getAuteur());
+	public void afficher() {
+		System.out.println("Titre de l'ouvrage : " + getTitre() +"\n"
+							+ "Auteur : " + this.auteur + "\n"
+							+"Date de création : "+ getDateCreation() + "\n"
+							+"Disponible : "+ isDispo() + "\n");
 	}
+
+
+	
 
 }
